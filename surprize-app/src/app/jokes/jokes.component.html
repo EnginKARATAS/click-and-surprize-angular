@@ -1,0 +1,13 @@
+<p>jokes works!</p>
+
+<p>{{ pageTitle }}</p>
+
+<div class="joke">
+    <button (click)="toggleJoke1()">Make a joke</button>
+    <p *ngIf="showJoke1">A crazy train on the road</p>
+</div>
+
+<div class="joke">
+    <button (click)="toggleJoke2()">Make a joke 2</button>
+    <p [style.background-color]="color" *ngIf="showJoke2">A bad joke</p>
+</div>
